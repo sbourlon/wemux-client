@@ -6,6 +6,7 @@ A wemux client running in a Docker container
 
 Usage:
 
+```
 wemux-mgr.sh CONTAINER COMMAND
 
 With:
@@ -21,4 +22,4 @@ With:
 
     setmode|m USER MODE
       Set the wemux mode for the user (mirror, pair, rogue)
-
+```
