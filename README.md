@@ -2,6 +2,11 @@
 A wemux client running in a Docker container
 
 1. Start the Docker container
+
+```
+docker run -p <YOUR SSH PORT>:22 -v /tmp/wemux-wemux:/tmp/wemux-wemux wemux-client
+```
+
 2. Use wemux-mgr.sh to manage users who can connect to the container
 
 Usage:
@@ -23,3 +28,5 @@ With:
     setmode|m USER MODE
       Set the wemux mode for the user (mirror, pair, rogue)
 ```
+
+3. Ask users to connect to your Docker container using their username
