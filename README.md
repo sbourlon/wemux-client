@@ -1,13 +1,14 @@
 # wemux-client
 A wemux client running in a Docker container
 
-1. Start the Docker container
-
+##### 1. Start the Docker container
 ```
 docker run -p <YOUR SSH PORT>:22 -v /tmp/wemux-wemux:/tmp/wemux-wemux wemux-client
 ```
 
-2. Use wemux-mgr.sh to manage users who can connect to the container
+##### 2. Ask users for their public SSH key
+
+##### 3. Use wemux-mgr.sh to manage users who can connect to the container
 
 Usage:
 
@@ -29,4 +30,4 @@ With:
       Set the wemux mode for the user (mirror, pair, rogue)
 ```
 
-3. Ask users to connect to your Docker container using their username
+##### 4. Ask users to connect to your Docker container using their username and SSH key
